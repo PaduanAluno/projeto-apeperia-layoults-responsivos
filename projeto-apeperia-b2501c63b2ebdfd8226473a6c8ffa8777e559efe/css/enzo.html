@@ -1,0 +1,34 @@
+<script>
+var valor1 = parseInt(prompt("De o valor para o 1 numero"));
+var valor2 = parseInt(prompt("De o valor para o 2 numero"));
+var valor3 = parseInt(prompt("De o valor para o 3 numero"));
+
+var maior = null
+var menor = null
+
+function validaMaior() {
+    if (valor1 > valor2 && valor1 > valor3) {
+        maior = valor1;
+    } else if (valor2 > valor1 && valor1 > valor3) {
+        maior = valor2;
+    } else if (valor3 > valor1 && valor3 > valor2) {
+        maior = valor3;
+    }
+    return maior
+}
+
+function validaMenor() {
+    if (valor1 < valor2 && valor1 < valor3) {
+        menor = valor1;
+    } else if (valor2 < valor1 && valor1 < valor3) {
+        menor = valor2;
+    } else if (valor3 < valor1 && valor3 < valor2) {
+        menor = valor3;
+    }
+    return  menor
+}
+
+
+console.log("Maior: " + validaMaior());
+console.log("Menor: " + validaMenor());
+</script>

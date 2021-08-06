@@ -1,0 +1,20 @@
+var valor1 = parseInt(prompt("De o valor para o 1 numero"))
+var valor2 = parseInt(prompt("De o valor para o 2 numero"))
+var valor3 = parseInt(prompt("De o valor para o 3 numero"))
+
+var maior = null
+var menor = null
+
+if(valor2 > valor1){
+  maior = valor2
+}else if(valor3 > maior){
+  maior = valor3
+}else if(valor2 < valor1){
+  menor = valor2
+}else if(valor3 < menor){
+  menor = valor3
+}
+
+
+console.log("Maior numero é: " +maior)
+console.log("Menor numero é: " +menor)
